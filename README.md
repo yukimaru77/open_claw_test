@@ -18,14 +18,27 @@ uv sync
 ### スクリプトとして実行
 
 ```bash
-uv run python minimal_uv_project.py
+uv run python minimal_uv_project.py Alice --times 2
 ```
 
 ### エントリーポイントとして実行
 
 ```bash
-uv run minimal-uv-project
+uv run minimal-uv-project Alice --times 2
+uv run minimal-uv-project Bob --uppercase
 ```
+
+### ヘルプ表示
+
+```bash
+uv run minimal-uv-project --help
+```
+
+## CLI仕様
+
+- `name`: あいさつする相手の名前（省略時は `uv`）
+- `-t`, `--times`: あいさつを表示する回数
+- `--uppercase`: あいさつを大文字で表示
 
 ## プロジェクト構成
 
