@@ -1,0 +1,14 @@
+[project]
+name = "minimal-uv-project"
+version = "0.1.0"
+description = "A minimal Python project using uv"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+minimal-uv-project = "minimal_uv_project:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
