@@ -8,6 +8,7 @@ dependencies = []
 
 [project.scripts]
 minimal-uv-project = "minimal_uv_project:main"
+open-claw-test = "open_claw_test_cli:main"
 
 [build-system]
 requires = ["hatchling"]
